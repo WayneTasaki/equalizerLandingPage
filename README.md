@@ -24,7 +24,6 @@ You can use any tools you like to help you complete the challenge. So if you've 
 <br>
 <br>
 Your users should be able to:
-<br>
 1. View the optimal layout depending on their device's screen size
 <br>
 2. See hover states for interactive elements</p>
