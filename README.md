@@ -3,7 +3,7 @@
 
 <div align="center">
   <h3>
-  ⚠️ Currently Being Worked On ⚠️
+  ⚠️ Currently Being Worked On ⚠️ <br>
     <a href="">🌐 Live Site </a>  |  
     <a href=""> Solution </a> | 
     <a href="https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE"> Challenge </a> 
