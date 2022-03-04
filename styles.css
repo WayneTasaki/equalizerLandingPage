@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #66E2DC;
+  --orange: #FA7453;
+  --yellow: #FFB964;
+  --white: #FCFAF9;
+  --black: #191826;
+}
+
+body {
+  background-image: url(./assets/bg-pattern-1.svg),
+  url(./assets/bg-main-desktop.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -40px right
+  clamp(-36px, calc(100vw - 1068px), .8px), top -287px center;
+  background-size: auto clamp(400px, 38vw, 468px), auto;
+  font-family: IBM Plex Sans;
+}
+
+header {
+  margin-top: 3.874rem;
+  margin-left: min(21.633vw, 10.384rem);
+  margin-right: auto;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6.115vw, 5.535rem);
+  line-height: 1;
+  margin-top: 7.938rem;
+  margin-left: 10.313rem;
+  margin-right: 10rem;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 1.389vw, 1.281rem);
+  font-weight: 400;
+  margin-top: clamp(20px, 2.778vw, 40.5px);
+  margin-left: 10.313rem;
+  margin-right: 28.156rem;
+  line-height: 1.7; /* 1.56 tablet, 1.62 mobile */
+}
+
+.planBg {
+  background-color: var(--black);
+  background-image: url(/assets/bg-pattern-2.svg);
+  background-size: 28%;
+  background-repeat: no-repeat;
+  background-position: 336px -35px;
+  width: clamp(375px, 77.083vw, 1111px);
+  height: clamp(600px, 41.667vw, 834px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: clamp(166px, 22.292vw, 321.5px);
+  border-radius: 12px;
+}
+
+.phoneImg {
+  width: clamp(208.98px, 21.667vw, 312px);
+  position: absolute;
+  left: 267px;
+  top: 655px;
+}
