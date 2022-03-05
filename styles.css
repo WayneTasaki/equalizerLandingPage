@@ -24,31 +24,50 @@ body {
 
 header {
   margin-top: 3.874rem;
-  margin-left: min(21.633vw, 10.384rem);
+  margin-left: clamp(5.078vw, 11.459vw, 165.008px);
+  margin-right: auto;
+}
+
+
+/* TITLE SECTION */
+
+.titleSection {
+  /* background-color: aquamarine; */
+  margin-left: auto;
   margin-right: auto;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 6.115vw, 5.535rem);
+  font-size: clamp(4rem, 6.111vw, 5.5rem);
   line-height: 1;
   margin-top: 7.938rem;
-  margin-left: 10.313rem;
+  margin-left: clamp(5.078vw, 11.459vw, 165.008px);
   margin-right: 10rem;
+  max-width: clamp(514px, 70.486vw, 1015px);
 }
 
 .subtitle {
-  font-size: clamp(1rem, 1.389vw, 1.281rem);
+  font-size: clamp(1.125rem, 1.389vw, 1.25rem);
   font-weight: 400;
-  margin-top: clamp(20px, 2.778vw, 40.5px);
-  margin-left: 10.313rem;
-  margin-right: 28.156rem;
+  margin-top: clamp(28px, 2.778vw, 40.5px);
+  margin-left: clamp(5.078vw, 11.459vw, 165.008px);
+  max-width: clamp(514px, 57.292vw, 825px);
+  /* margin-right: clamp(39px, 70.486vw, 1015px); */
   line-height: 1.7; /* 1.56 tablet, 1.62 mobile */
 }
 
+
+/* PLAN SECTION */
+
+.planSection {
+  display: flex;
+  /* background-color: aliceblue; */
+  margin-top: 10px;
+}
 .planBg {
   background-color: var(--black);
   background-image: url(/assets/bg-pattern-2.svg);
-  background-size: 28%;
+  background-size: 23%;
   background-repeat: no-repeat;
   background-position: 336px -35px;
   width: clamp(375px, 77.083vw, 1111px);
@@ -63,5 +82,64 @@ h1 {
   width: clamp(208.98px, 21.667vw, 312px);
   position: absolute;
   left: 267px;
-  top: 655px;
+  top: clamp(632px, 44.931vw, 647px);
+}
+
+/* .planCard {
+  background-color: var(--orange);
+  border-radius: 12px;
+  position: absolute;
+  width: 446px;
+  height: 625px;
+  margin-left: 550px;
+  margin-top: 90px;
+  left: 734px;
+  top: 950px;
+} */
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 956px) {
+  body {
+    background-image: url(./assets/bg-pattern-1.svg),
+    url(./assets/bg-main-tablet.png);
+    background-position: top -40px right
+    clamp(-36px, calc(100vw - 1068px), .8px), top -247px left -360px;
+    background-size: auto clamp(400px, 38vw, 468px), auto;
+  }
+  header, h1, .subtitle, .planBg {
+    margin-left: 2.438rem;
+  }
+  h1 {
+    margin-top: 5.938rem;
+  }
+}
+
+@media (max-width: 655px) {
+  body {
+    background-image: url(/assets/bg-main-mobile.png);
+    background-size: 170%;
+    background-position: -50px -270px; 
+  }
+
+  header, h1, .subtitle, .planBg {
+    margin-left: 24px;
+  }
+
+  .subtitle {
+    margin-right: 24px;
+    margin-top: min(29px, 20px);
+    /* width: min(327px, 514px); */
+    font-size: clamp(1rem, 2.344vw, 18px);
+  }
+
+  h1 {
+    /* max-width: clamp(266px, 113.867vw, 427px); */
+    margin-right: clamp(85px, 22.667vw, 85px);
+    margin-top: 4rem;
+    font-size: clamp(2.5rem, 10.667vw, 64px);
+    /* add clamps for margins */
+  }
 }
