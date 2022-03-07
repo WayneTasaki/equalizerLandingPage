@@ -67,10 +67,10 @@ h1 {
 .planBg {
   background-color: var(--black);
   background-image: url(/assets/bg-pattern-2.svg);
-  background-size: 23%;
+  background-size: 312px;
   background-repeat: no-repeat;
-  background-position: 336px -35px;
-  width: clamp(375px, 77.083vw, 1111px);
+  background-position: 336px -55px;
+  width: clamp(696px, 77.083vw, 1111px);
   height: clamp(600px, 41.667vw, 834px);
   margin-left: auto;
   margin-right: auto;
@@ -79,27 +79,31 @@ h1 {
 }
 
 .phoneImg {
-  width: clamp(208.98px, 21.667vw, 312px);
+  width: clamp(270.21px, 21.667vw, 312px);
   position: absolute;
-  left: 267px;
+  left: clamp(97px, 18.542vw, 267px);
   top: clamp(632px, 44.931vw, 647px);
+  /* left: 267px;
+  top: 647px; */
 }
 
-/* .planCard {
+.planCard {
   background-color: var(--orange);
   border-radius: 12px;
   position: absolute;
   width: 446px;
   height: 625px;
-  margin-left: 550px;
-  margin-top: 90px;
+  /* margin-left: 550px;
+  margin-top: 90px; */
   left: 734px;
-  top: 950px;
-} */
+  top: clamp(920px, 65.972vw, 950px);
+}
 
 
 
 /* MEDIA QUERIES */
+
+  /* TABLET */
 
 @media (max-width: 956px) {
   body {
@@ -109,13 +113,20 @@ h1 {
     clamp(-36px, calc(100vw - 1068px), .8px), top -247px left -360px;
     background-size: auto clamp(400px, 38vw, 468px), auto;
   }
-  header, h1, .subtitle, .planBg {
+  header, h1, .subtitle {
     margin-left: 2.438rem;
   }
   h1 {
     margin-top: 5.938rem;
   }
+  .phoneImg {
+    left: clamp(97px, 18.542vw, 267px);
+    width: clamp(270.21px, 21.667vw, 312px);
+  }
 }
+
+
+  /* MOBILE */
 
 @media (max-width: 655px) {
   body {
@@ -124,7 +135,7 @@ h1 {
     background-position: -50px -270px; 
   }
 
-  header, h1, .subtitle, .planBg {
+  header, h1, .subtitle {
     margin-left: 24px;
   }
 
