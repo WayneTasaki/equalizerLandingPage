@@ -1,4 +1,4 @@
-<img src="/assets/equalizerSite.gif"></img>
+<img src="/assets/equalizerSite.gif" align="center"></img>
 <h1 align="center">NFT preview card component</h1>
 
 <div align="center">
