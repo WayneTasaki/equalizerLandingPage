@@ -64,7 +64,7 @@ h1 {
 }
 .planBg {
   background-color: var(--black);
-  background-image: url(/assets/bg-pattern-2.svg);
+  background-image: url(assets/bg-pattern-2.svg);
   background-size: 312px;
   background-repeat: no-repeat;
   background-position: 336px -55px;
@@ -295,7 +295,7 @@ footer {
 
 @media (max-width: 655px) {
   body {
-    background-image: url(/assets/bg-main-mobile.png);
+    background-image: url(./assets/bg-main-mobile.png);
     background-size: 170%;
     background-position: -50px -270px;
   }
