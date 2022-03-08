@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/VDnmjVQ/preview.jpg"></img>
+<img src="https://i.ibb.co/F0TJgs8/equalizer-Site.gif"></img>
 <h1 align="center">NFT preview card component</h1>
 
 <div align="center">
