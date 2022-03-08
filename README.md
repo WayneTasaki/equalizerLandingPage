@@ -38,4 +38,4 @@ Your users should be able to:
 <p>HTML, CSS</p>
 
 ## What I learned
-
+- clamp, using inline svg so I could change fill on hover,
