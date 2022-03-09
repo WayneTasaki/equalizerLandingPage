@@ -3,9 +3,8 @@
 
 <div align="center">
   <h3>
-  ⚠️ Currently Being Worked On ⚠️ <br><br>
-    <a href="">🌐 Live Site </a>  |  
-    <a href=""> Solution </a> | 
+    <a href="https://waynetasaki.github.io/equalizerLandingPage/">🌐 Live Site </a>  |  
+    <a href="https://www.frontendmentor.io/solutions/equalizer-landing-page-responsive-design-flexbox-css-clamp-uLSRKjJ3B"> Solution </a> | 
     <a href="https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE"> Challenge </a> 
   </h3>
 </div>
@@ -37,4 +36,4 @@ Your users should be able to:
 <p>HTML, CSS</p>
 
 ## What I learned
-- clamp, using inline svg so I could change fill on hover,
+- clamp() was a major learning experience for me. Using the min, preferred, and max values I was able to have the orange "plan card" and phone responsive and move around the page. Originally I positioned the objects absolutely and used top, right, left, & bottom and used clamp to get them to move. For the most part it worked but using clamp with margins was a lot easier especially when media queries were involved. I also learned more about the use of svg. Previously I just used them as regular images and placed them where they needed to be on the page. This time however, the social media icons at the bottom of the page needed to change colors on hover and I realized I had to paste the whole svg code and change their fill using css.
